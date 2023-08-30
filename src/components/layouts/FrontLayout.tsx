@@ -5,7 +5,7 @@ const FrontLayout = () => {
   return (
     <Fragment>
       <HeaderFront />
-      <main className="pt-[100px] w-full h-screen left-0 top-0 overflow-y-scroll text-white z-0 fixed">
+      <main className="pt-[100px] w-full h-screen top-0 overflow-y-scroll text-white z-0">
         <Outlet />
       </main>
     </Fragment>

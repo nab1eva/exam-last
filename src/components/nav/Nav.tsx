@@ -23,7 +23,7 @@ function Nav() {
              =
             </button>
             {isOpen && (
-              <ul className="dropdown-menu">
+              <ul className="dropdown-menuu">
                 <Link to="/about">About me</Link>
                 <Link to="/resume">Resume</Link>
                 <Link to="/portfolios">My Works</Link>

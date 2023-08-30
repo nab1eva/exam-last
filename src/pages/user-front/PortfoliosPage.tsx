@@ -21,7 +21,7 @@ const PortfoliosPage = () => {
   };
 
   return (
-    <section className="portfolios-page-container">
+    <section className="container">
       <div className="portfolios-heading">
         <h4>Portfolio</h4>
       </div>

@@ -15,21 +15,21 @@ const ResumePage = () => {
   }, [getExperiences, getEducations, userId]);
 
   return (
-    <section className="resume-page-container">
+    <section className="container">
       <div className="resume-heading">
         <h4>Resume</h4>
         <div></div>
       </div>
       <div className="resume-grid">
         <div className="education-section">
-          <h3 className="resume-section-title">Educations</h3>
+          <h3 className="resume-section-title">Education</h3>
           <div className="resume-content education-content">
             {educationsData.map((education: EducationForm) => (
               <div key={education._id} className="resume-entry">
-                <h4 className="resume-entry-title">{education.name}</h4>
+                <h4 className="resume-entry-title">{"_" + education.name}</h4>
                 <p className="resume-date">
-                  {education.startDate.split("T")[0].split("-")[0] +
-                    " - " +
+                  {"from: " + education.startDate.split("T")[0].split("-")[0] +
+                    " to: " +
                     education.endDate.split("T")[0].split("-")[0]}
                 </p>
                 <p className="resume-level">{education.level}</p>
@@ -43,14 +43,14 @@ const ResumePage = () => {
           <div className="resume-content experience-content">
             {experiencesData.map((experience: ExperienceForm) => (
               <div key={experience._id} className="resume-entry">
-                <h4 className="resume-entry-title">{experience.companyName}</h4>
+                <h4 className="resume-entry-title">{"_" + experience.companyName}</h4>
                 <p className="resume-date">
-                  {experience.startDate.split("T")[0].split("-")[0] +
-                    " - " +
+                  {"from: " + experience.startDate.split("T")[0].split("-")[0] +
+                    " to: " + 
                     experience.endDate.split("T")[0].split("-")[0]}
                 </p>
-                <p className="resume-company-name text-lg">{experience.companyName}</p>
-                <p className="resume-description">{experience.description}</p>
+                <p className="resume-company-name text-lg">{"at:  " + experience.companyName}</p>
+                <p className="resume-description">{"as: " + experience.description}</p>
               </div>
             ))}
           </div>

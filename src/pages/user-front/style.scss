@@ -3,28 +3,10 @@
     padding: 4rem 6rem;
   }
   
-  .heading {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .heading h4 {
-    font-size: 1.5rem;
-    color: rgba(0, 0, 0, 0.85);
-  }
-  
-  
-  .heading h2 {
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.85);
-    max-width: 600px;
-  }
   
   .about-section {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
     gap: 2rem;
   }
@@ -45,7 +27,6 @@
     font-size: 2rem;
     font-weight: bold;
     color: #01bab3;
-    max-width: 400px;
   }
   
   .about-description {
@@ -53,7 +34,6 @@
     font-size: 14px;
     color: rgba(0, 0, 0, 0.85);
     margin-top: 0.5rem;
-    max-width: 400px;
   }
   
   .about-list {
@@ -93,10 +73,11 @@
   }
   
   .about-skills-section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     gap: 1rem;
-    margin-top: 1rem;
+    margin: 1rem 0;
   }
   
   .about-loading-overlay {
@@ -142,11 +123,17 @@
   
   .resume-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     gap: 2rem;
-    margin-top: 2rem;
+    margin: 2rem 0;
   }
   
+  @media(min-width:800px){
+    .resume-grid{
+      grid-template-columns: auto auto;
+    }
+  }
+
   .resume-section-title {
     font-size: 1.5rem;
     font-weight: bold;
@@ -159,17 +146,15 @@
   }
   
   .resume-entry-title {
+    margin-top: 20px;
     font-size: 1.8rem;
     font-weight: bold;
-    color:  rgba(0, 0, 0, 0.85);
+    color:  #01bab3;
   }
   
   .resume-date {
-    margin-top: 1rem;
-    padding: 0.5rem 0;
-    background-color: #272727;
+    padding: 5px;
     display: inline-block;
-    width: 110px;
     text-align: center;
     font-size: 14px;
     color:  rgba(0, 0, 0, 0.85);
@@ -177,7 +162,7 @@
   
   .resume-level {
     font-size: 1rem;
-    color:  rgba(0, 0, 0, 0.85);
+    color: #028c87;
     margin-top: 0.5rem;
   }
   
@@ -190,8 +175,7 @@
   .resume-company-name {
     font-size: 1.5rem;
     font-weight: bold;
-    color:  rgba(0, 0, 0, 0.85);
-    margin-top: 1rem;
+    color: #028c87;
   }
   
 

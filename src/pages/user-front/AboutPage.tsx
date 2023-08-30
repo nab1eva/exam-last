@@ -48,10 +48,7 @@ const AboutPage = () => {
   };
 
   return (
-    <div className="about-page-container">
-      <div className="heading">
-        <h4>About Me</h4>
-      </div>
+    <div className="container mb-4">
       <div className="about-section">
         <img className="about-image" src={IMGURL + photo} alt="" />
         <div className="about-details">
@@ -89,10 +86,6 @@ const AboutPage = () => {
               <span className="about-list-title">Freelance: </span>
               Avialable
             </li>{" "}
-            <li className="about-list-item">
-              <span className="about-list-title">Degree: </span>
-              Junior
-            </li>
           </ul>
           <p className="about-info">{info}</p>
         </div>

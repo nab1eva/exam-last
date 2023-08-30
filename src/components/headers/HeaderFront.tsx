@@ -15,7 +15,7 @@ const HeaderFront = () => {
   }, [getUserData]);
 
   return (
-    <nav className="header-front">
+    <nav className="header-front container">
       <div className="header-content">
         <h2 className="header-title">
           <Link to="/home">

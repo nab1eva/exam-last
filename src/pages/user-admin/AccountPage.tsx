@@ -340,16 +340,16 @@ function IconAccount() {
   return (
     <span className="flex items-center">
       <i className="fa-regular fa-user px-1"></i>
-      <p className="text-sm font-semibold">ACCOUNT</p>
+      <p className="text-sm font-semibold">Account info</p>
     </span>
   );
 }
 
 function IconSecurity() {
   return (
-    <span className="flex items-center ">
+    <span className="flex items-center">
       <i className="bi bi-shield-lock-fill pr-1"></i>
-      <p className="text-sm font-semibold">SECURITY</p>
+      <p className="text-sm font-semibold ">Passwords</p>
     </span>
   );
 }
