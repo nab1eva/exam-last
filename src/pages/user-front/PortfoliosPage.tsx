@@ -23,9 +23,9 @@ const PortfoliosPage = () => {
   return (
     <section className="container">
       <div className="portfolios-heading">
-        <h4>Portfolio</h4>
+        <h4>Projects</h4>
       </div>
-      <div className="portfolios-grid">
+      <div className="projects-list">
         {portfoliosData.map((portfolio: PortfolioForm) => (
           <PortfolioCard key={portfolio._id} {...portfolio} />
         ))}

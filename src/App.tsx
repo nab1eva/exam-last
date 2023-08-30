@@ -7,7 +7,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import SkillsUser from "./pages/user-admin/SkillsUser";
 import ExperiencesUser from "./pages/user-admin/ExperiencesUser";
 import EducationsUser from "./pages/user-admin/EducationsUser";
-import PortfoliosUser from "./pages/user-admin/PortfoliosUser";
+import PortfoliosUser from "./pages/user-admin/ProjectsUser";
 import UserLayout from "./components/layouts/UserLayout";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";

@@ -148,7 +148,7 @@ const PortfoliosUser = () => {
         {loading ? (
           <LoadingGreen />
         ) : (
-          <div className="projects-list">
+          <div className="projects-list mr-4">
             {portfolios?.map((el: PortfolioForm) => (
               <div key={el._id} className="project-card">
                 <img

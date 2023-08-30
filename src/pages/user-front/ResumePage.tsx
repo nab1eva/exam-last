@@ -49,8 +49,8 @@ const ResumePage = () => {
                     " to: " + 
                     experience.endDate.split("T")[0].split("-")[0]}
                 </p>
-                <p className="resume-company-name text-lg">{"at:  " + experience.companyName}</p>
-                <p className="resume-description">{"as: " + experience.description}</p>
+                <p className="resume-company-name text-lg"> <span>at: </span>{experience.companyName}</p>
+                <p className="resume-description"><span>as: </span>{experience.description}</p>
               </div>
             ))}
           </div>

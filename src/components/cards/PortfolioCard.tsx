@@ -2,27 +2,30 @@ import { Link } from "react-router-dom";
 import { IMGURL } from "../../const";
 import { PortfolioForm } from "../../types";
 
-const PortfolioCard = ({_id,photo,name,url,description}:PortfolioForm) => {
+const PortfolioCard = ({
+  photo,
+  name,
+  url,
+  description,
+}: PortfolioForm) => {
   return (
-    <div
-      key={_id}
-      style={{
-        background: `url(${
-          IMGURL + photo._id + "." + photo.name.split(".")[1]
-        })`, 
-        backgroundSize: "cover",
-      }}
-      className="portfolio-card w-full max-h-[100px]"
-    >
-      <div className="portfolio-info">
-        <h3 className="font-semibold text-2xl">{name}</h3>
-        <p className="px-5 py-1">{description}</p>
-        <Link to={`${url}`} className="hover:text-[#18d26e]">
-          <i className="fa-solid fa-link text-2xl"></i>
+    <div className="project-card">
+      <img
+        className="portfolio-photo"
+        src={
+          photo._id ? IMGURL + photo._id + "." + photo.name.split(".")[1] : ""
+        }
+        alt=""
+      />
+      <h2>{name}</h2>
+      <p>{description}</p>
+      <button className="link">
+        <Link target="blank" to={url}>
+          Click here
         </Link>
-      </div>
+      </button>
     </div>
   );
 };
 
-export default PortfolioCard
+export default PortfolioCard;

@@ -107,7 +107,7 @@ function EditAccount() {
   return (
     <div
       style={{ height: "calc(100vh - 150px)" }}
-      className="overflow-y-scroll"
+      className="overflow-y-scroll container"
     >
       {loading ? (
         <LoadingGreen />
@@ -290,8 +290,8 @@ function EditPassword() {
       style={{ height: "calc(100vh - 150px)" }}
       className="overflow-y-scroll"
     >
-      <form onSubmit={submit}>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-base">
+      <form onSubmit={submit} className="pr-4">
+        <div className="grid grid-cols-1 ">
           <input
             type="text"
             name="username"
@@ -338,18 +338,18 @@ function EditPassword() {
 
 function IconAccount() {
   return (
-    <span className="flex items-center">
+    <span className="green flex items-center">
       <i className="fa-regular fa-user px-1"></i>
-      <p className="text-sm font-semibold">Account info</p>
+      <p className="text-sm">Account info</p>
     </span>
   );
 }
 
 function IconSecurity() {
   return (
-    <span className="flex items-center">
+    <span className="green flex items-center">
       <i className="bi bi-shield-lock-fill pr-1"></i>
-      <p className="text-sm font-semibold ">Passwords</p>
+      <p className="text-sm ">Passwords</p>
     </span>
   );
 }
