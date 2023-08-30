@@ -60,7 +60,6 @@ const RegisterPage = () => {
             type="text"
             placeholder="Username"
           />
-
           <input
             required
             onChange={handleForm}
@@ -68,10 +67,9 @@ const RegisterPage = () => {
             id="email"
             name="email"
             className="login-input"
-            type="email"
+            type={"email"}
             placeholder="Email"
           />
-
           <input
             required
             onChange={handleForm}
@@ -82,16 +80,13 @@ const RegisterPage = () => {
             type={"password"}
             placeholder="Password"
           />
-          <button
-            typeof="submit"
-            className="button"
-          >
+          <button typeof="submit" className="button">
             Register
           </button>
           <p className="login-reg">
-          Don't have an account?
-          <Link to="/"> Login</Link>
-        </p>
+            Already have an account?
+            <Link to="/"> Login</Link>
+          </p>
         </form>
       </div>
     </div>

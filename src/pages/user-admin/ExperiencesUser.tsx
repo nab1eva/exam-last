@@ -73,14 +73,14 @@ const ExperiencesUser = () => {
   };
 
   const deleteExperience = async (id: string) => {
-    const checkDelete = confirm("Do you want to delete this experience?");
+    const checkDelete = confirm("Are you sure want to delete?");
     if (checkDelete) {
       try {
         await request.delete(`experiences/${id}`);
         getExperiences();
-        toast.success("Delete experience successfully");
+        toast.success("Deleted successfully !");
       } catch {
-        toast.error("An error occurred, please try again");
+        toast.error("Error, try again !");
       }
     }
   };
@@ -107,7 +107,7 @@ const ExperiencesUser = () => {
       try {
         await request.put(`experiences/${selected}`, experience);
         getExperiences();
-        toast.success("Changed successfully");
+        toast.success("Changed successfully !");
       } catch {
         toast.error("Error");
       }
@@ -115,7 +115,7 @@ const ExperiencesUser = () => {
       try {
         await request.post(`experiences`, experience);
         getExperiences();
-        toast.success("Experience added");
+        toast.success("Added successfully !");
       } catch (err) {
         console.log(err);
       }

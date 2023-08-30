@@ -68,14 +68,14 @@ const SkillsUser = () => {
   };
 
   const deleteSkill = async (id: string) => {
-    const checkDelete = confirm("Do you want to delete this Skill?");
+    const checkDelete = confirm("Are you sure want to delete?");
     if (checkDelete) {
       try {
         await request.delete(`skills/${id}`);
         getSkills();
-        toast.success("Delete skill successfully");
+        toast.success("Deleted successfully !");
       } catch {
-        toast.error("An error occurred, please try again");
+        toast.error("Error, try again !");
       }
     }
   };
@@ -95,7 +95,7 @@ const SkillsUser = () => {
       try {
         await request.put(`skills/${selected}`, skill);
         getSkills();
-        toast.success("Changed successfully");
+        toast.success("Changed successfully !");
       } catch {
         toast.error("Error");
       }
@@ -103,7 +103,7 @@ const SkillsUser = () => {
       try {
         await request.post(`skills`, skill);
         getSkills();
-        toast.success("Skill added");
+        toast.success("Added successfully !");
       } catch (err) {
         console.log(err);
       }

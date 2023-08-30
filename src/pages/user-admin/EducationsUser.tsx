@@ -75,14 +75,14 @@ const EducationsUser = () => {
   };
 
   const deleteEducation = async (id: string) => {
-    const checkDelete = confirm("Do you want to delete this education?");
+    const checkDelete = confirm("Are you sure want to delete?");
     if (checkDelete) {
       try {
         await request.delete(`education/${id}`);
         getEducations();
-        toast.success("Delete education successfully");
+        toast.success("Deleted successfully !");
       } catch {
-        toast.error("An error occurred, please try again");
+        toast.error("Error, try again !");
       }
     }
   };
@@ -102,7 +102,7 @@ const EducationsUser = () => {
       try {
         await request.put(`education/${selected}`, education);
         getEducations();
-        toast.success("Changed successfully");
+        toast.success("Changed successfully !");
       } catch {
         toast.error("Error");
       }
@@ -110,7 +110,7 @@ const EducationsUser = () => {
       try {
         await request.post(`education`, education);
         getEducations();
-        toast.success("Education added");
+        toast.success("Added successfully !");
       } catch (err) {
         console.log(err);
       }

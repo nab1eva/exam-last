@@ -74,14 +74,14 @@ const PortfoliosUser = () => {
   };
 
   const deletePortfolio = async (id: string) => {
-    const checkDelete = confirm("Do you want to delete this portfolio?");
+    const checkDelete = confirm("Are you sure want to delete?");
     if (checkDelete) {
       try {
         await request.delete(`portfolios/${id}`);
         getPortfolios();
-        toast.success("Delete portfolio successfully!");
+        toast.success("Deleted successfully !");
       } catch {
-        toast.error("An error occurred, please try again");
+        toast.error("Error, try again !");
       }
     }
   };
@@ -105,7 +105,7 @@ const PortfoliosUser = () => {
           photo: img._id,
         });
         getPortfolios();
-        toast.success("Changed successfully");
+        toast.success("Changed successfully !");
       } catch {
         toast.error("Error");
       }
@@ -113,7 +113,7 @@ const PortfoliosUser = () => {
       try {
         await request.post(`portfolios`, { ...portfolio, photo: img._id });
         getPortfolios();
-        toast.success("Experience added");
+        toast.success("Added successfully !");
       } catch (err) {
         console.log(err);
       }
