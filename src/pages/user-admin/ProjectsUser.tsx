@@ -184,11 +184,11 @@ const PortfoliosUser = () => {
             ))}
           </div>
         )}
-         {total > 0 ? (
-        <div className="pagination">
-          <Pagination current={page} onChange={onChange} total={total} />
-        </div>
-      ) : null}
+        {total > 0 ? (
+          <div className="pagination">
+            <Pagination current={page} onChange={onChange} total={total} />
+          </div>
+        ) : null}
       </div>
       <Modal show={show}>
         <div className="flex justify-between items-center pb-3">
@@ -202,37 +202,35 @@ const PortfoliosUser = () => {
           <img
             className="w-[200px] mb-2"
             src={img._id ? IMGURL + img._id + "." + img.name.split(".")[1] : ""}
-            alt="portfolio"
           />
           <input type="file" onChange={changeImg} />
         </div>
         <form onSubmit={submit}>
-          <div>
-            <label htmlFor="name">Site Name:</label>
-            <input
-              className="login-input black"
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Site Name"
-              value={name}
-              onChange={handleChange}
-            />
+          <div className="flex items-center justify-between flex-wrap">
+            <div>
+              <label htmlFor="name">Site Name:</label>
+              <input
+                className="login-input black"
+                type="text"
+                name="name"
+                id="name"
+                value={name}
+                onChange={handleChange}
+              />
+            </div>
+            <div>
+              <label htmlFor="url">Url:</label>
+              <input
+                required
+                className="login-input black"
+                type="text"
+                name="url"
+                id="url"
+                value={url}
+                onChange={handleChange}
+              />
+            </div>
           </div>
-          <div>
-            <label htmlFor="url">Url:</label>
-            <input
-              required
-              className="login-input black"
-              type="text"
-              name="url"
-              id="url"
-              placeholder="Url"
-              value={url}
-              onChange={handleChange}
-            />
-          </div>
-
           <div>
             <label htmlFor="description">Description:</label>
             <input
@@ -240,16 +238,13 @@ const PortfoliosUser = () => {
               type="text"
               name="description"
               id="description"
-              placeholder="Description"
               value={description}
               onChange={handleChange}
             />
           </div>
 
           <div className="flex justify-end">
-            <button className="add-button">
-              {selected ? "Save" : "Add"}
-            </button>
+            <button className="add-button">{selected ? "Save" : "Add"}</button>
           </div>
         </form>
       </Modal>

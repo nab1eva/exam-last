@@ -243,8 +243,6 @@ footer {
   background-color: #01bab3;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0px -1px 16px 20px rgba(0, 0, 0, 0.04),
-    0px 4px 56px rgba(0, 0, 0, 0.04);
 }
 
 .project-card p {
@@ -348,6 +346,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   gap: 40px;
+  margin-bottom: 30px;
 }
 
 .contact-box ul {

@@ -26,7 +26,6 @@ const EducationsUser = () => {
   const [total, setTotal] = useState(0);
   const [educations, setEducations] = useState([]);
   const [education, setEducation] = useState(obj);
- 
 
   const { name, level, description, startDate, endDate } = education;
 
@@ -192,7 +191,6 @@ const EducationsUser = () => {
               type="text"
               name="name"
               id="name"
-              placeholder="Education"
               value={name}
               onChange={handleChange}
             />
@@ -205,7 +203,6 @@ const EducationsUser = () => {
               type="text"
               name="level"
               id="level"
-              placeholder="Level"
               value={level}
               onChange={handleChange}
             />
@@ -218,35 +215,34 @@ const EducationsUser = () => {
               type="text"
               name="description"
               id="description"
-              placeholder="Description"
               value={description}
               onChange={handleChange}
             />
           </div>
-          <div>
-            <label htmlFor="startDate">Start Date:</label>
-            <input
-              className="login-input black"
-              type="date"
-              name="startDate"
-              id="startDate"
-              placeholder="StartDate"
-              value={startDate}
-              onChange={handleChange}
-            />
-          </div>
-          <div>
-            <label htmlFor="endDate">End Date:</label>
+          <div className="flex items-center justify-between flex-wrap">
+            <div>
+              <label htmlFor="startDate">Start Date:</label>
+              <input
+                className="login-input black"
+                type="date"
+                name="startDate"
+                id="startDate"
+                value={startDate}
+                onChange={handleChange}
+              />
+            </div>
+            <div>
+              <label htmlFor="endDate">End Date:</label>
 
-            <input
-              className="login-input black"
-              type="date"
-              name="endDate"
-              id="endDate"
-              placeholder="EndDate"
-              value={endDate}
-              onChange={handleChange}
-            />
+              <input
+                className="login-input black"
+                type="date"
+                name="endDate"
+                id="endDate"
+                value={endDate}
+                onChange={handleChange}
+              />
+            </div>
           </div>
           <div className="flex justify-end">
             <button className="add-button">{selected ? "Save" : "Add"}</button>

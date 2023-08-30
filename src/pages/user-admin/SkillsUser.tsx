@@ -164,26 +164,24 @@ const SkillsUser = () => {
         <hr className="pb-4" />
         <form onSubmit={submit}>
           <div>
-            <label htmlFor="name">Texnology name:</label>
+            <label htmlFor="name">Skill name:</label>
             <input
               className="login-input"
               type="text"
               name="name"
               id="name"
-              placeholder="Texnology name"
               value={name}
               onChange={handleChange}
             />
           </div>
           <div>
-            <label htmlFor="percent">Percent:</label>
+            <label htmlFor="percent">Awareness percentage:</label>
             <input
               required
               className="login-input"
               type="text"
               name="percent"
               id="percent"
-              placeholder="Percent"
               value={percent}
               onChange={handleChange}
             />

@@ -148,12 +148,12 @@ const ExperiencesUser = () => {
                 Description: <span>{el.description}</span>
               </p>
               <div className="education-date">
-              <p key={el.startDate}>
-                from: <span>{el.startDate.split("T")[0]}</span>
-              </p>
-              <p key={el.endDate}>
-                to: <span>{el.endDate.split("T")[0]}</span>
-              </p>
+                <p key={el.startDate}>
+                  from: <span>{el.startDate.split("T")[0]}</span>
+                </p>
+                <p key={el.endDate}>
+                  to: <span>{el.endDate.split("T")[0]}</span>
+                </p>
               </div>
               <div className="ed-buttons">
                 <i
@@ -188,30 +188,33 @@ const ExperiencesUser = () => {
         </div>
         <hr className="pb-4" />
         <form onSubmit={submit}>
-          <div>
-            <label htmlFor="companyName">Company Name:</label>
-            <input
-              className="login-input black"
-              type="text"
-              name="companyName"
-              id="companyName"
-              placeholder="Company Name"
-              value={companyName}
-              onChange={handleChange}
-            />
-          </div>
-          <div>
-            <label htmlFor="workName">Work Name:</label>
-            <input
-              required
-              className="login-input black"
-              type="text"
-              name="workName"
-              id="workName"
-              placeholder="Work Name"
-              value={workName}
-              onChange={handleChange}
-            />
+          <div className="flex items-center justify-between flex-wrap">
+            <div>
+              {" "}
+              <label htmlFor="companyName">Company Name:</label>
+              <input
+                className="login-input black"
+                type="text"
+                name="companyName"
+                id="companyName"
+                value={companyName}
+                onChange={handleChange}
+              />
+            </div>
+
+            <div>
+              {" "}
+              <label htmlFor="workName">Work Name:</label>
+              <input
+                required
+                className="login-input black"
+                type="text"
+                name="workName"
+                id="workName"
+                value={workName}
+                onChange={handleChange}
+              />
+            </div>
           </div>
 
           <div>
@@ -221,34 +224,33 @@ const ExperiencesUser = () => {
               type="text"
               name="description"
               id="description"
-              placeholder="Description"
               value={description}
               onChange={handleChange}
             />
           </div>
-          <div>
-            <label htmlFor="startDate">Start Date:</label>
-            <input
-              className="login-input black"
-              type="date"
-              name="startDate"
-              id="startDate"
-              placeholder="StartDate"
-              value={startDate}
-              onChange={handleChange}
-            />
-          </div>
-          <div>
-            <label htmlFor="endDate">End Date:</label>
-            <input
-              className="login-input black"
-              type="date"
-              name="endDate"
-              id="endDate"
-              placeholder="EndDate"
-              value={endDate}
-              onChange={handleChange}
-            />
+          <div className="flex items-center justify-between flex-wrap">
+            <div>
+              <label htmlFor="startDate">Start Date:</label>
+              <input
+                className="login-input black"
+                type="date"
+                name="startDate"
+                id="startDate"
+                value={startDate}
+                onChange={handleChange}
+              />
+            </div>
+            <div>
+              <label htmlFor="endDate">End Date:</label>
+              <input
+                className="login-input black"
+                type="date"
+                name="endDate"
+                id="endDate"
+                value={endDate}
+                onChange={handleChange}
+              />
+            </div>
           </div>
           <div className="flex justify-end">
             <button className="add-button">{selected ? "Save" : "Add"}</button>
