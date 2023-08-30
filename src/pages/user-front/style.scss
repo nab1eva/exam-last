@@ -1,0 +1,236 @@
+.page-container {
+    width: 100%;
+    padding: 4rem 6rem;
+  }
+  
+  .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .heading h4 {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.85);
+  }
+  
+  
+  .heading h2 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.85);
+    max-width: 600px;
+  }
+  
+  .about-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .about-image {
+    width: 300px;
+    max-width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+  }
+  
+  .about-details {
+    width: 60%;
+    max-width: 100%;
+  }
+  
+  .about-name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #01bab3;
+    max-width: 400px;
+  }
+  
+  .about-description {
+    font-style: italic;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.85);
+    margin-top: 0.5rem;
+    max-width: 400px;
+  }
+  
+  .about-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.85);
+    max-width: 400px;
+  }
+  
+  .about-list-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .about-list-item span {
+    font-weight: bold;
+  }
+  
+  .about-list-item a {
+    color: rgba(0, 0, 0, 0.85);
+    text-decoration: none;
+  }
+  
+  .about-skills-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+  
+  .about-skills-heading h4 {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.85);
+  }
+  
+  .about-skills-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .about-loading-overlay {
+    position: fixed;
+    z-index: 30;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  /* ResumePage */
+
+.resume-page-container {
+    width: 100%;
+    padding: 4rem 6rem;
+  }
+  
+  .resume-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .resume-heading h4 {
+    font-size: 1.5rem;
+    color:  rgba(0, 0, 0, 0.85);
+  }
+  
+  .resume-title-main {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:  rgba(0, 0, 0, 0.85);
+    max-width: 600px;
+  }
+  
+  .resume-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .resume-section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:  rgba(0, 0, 0, 0.85);
+  }
+  
+  .resume-content {
+    border-left: 2px solid #272727;
+    padding-left: 25px;
+  }
+  
+  .resume-entry-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color:  rgba(0, 0, 0, 0.85);
+  }
+  
+  .resume-date {
+    margin-top: 1rem;
+    padding: 0.5rem 0;
+    background-color: #272727;
+    display: inline-block;
+    width: 110px;
+    text-align: center;
+    font-size: 14px;
+    color:  rgba(0, 0, 0, 0.85);
+  }
+  
+  .resume-level {
+    font-size: 1rem;
+    color:  rgba(0, 0, 0, 0.85);
+    margin-top: 0.5rem;
+  }
+  
+  .resume-description {
+    font-size: 14px;
+    color:  rgba(0, 0, 0, 0.85);
+    margin-top: 0.5rem;
+  }
+  
+  .resume-company-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:  rgba(0, 0, 0, 0.85);
+    margin-top: 1rem;
+  }
+  
+
+  /* PortfoliosPage.scss */
+
+.portfolios-page-container {
+    width: 100%;
+    padding: 4rem 6rem;
+  }
+  
+  .portfolios-heading {
+    display: flex;
+    align-items: center;
+  }
+  
+  .portfolios-heading h4 {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.85);
+  }
+  
+  .portfolios-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.85);
+    text-transform: uppercase;
+    max-width: 600px;
+  }
+  
+  .portfolios-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .portfolios-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  

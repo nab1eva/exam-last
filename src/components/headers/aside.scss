@@ -1,0 +1,91 @@
+// Aside Container
+.aside-container {
+  height: calc(100vh - 20px);
+  transition: 0.4s;
+  position: fixed;
+  top: 10px;
+  left: 2px;
+  background-color: #01bab3;
+  border: none;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+
+  &.expanded {
+    width: 200px;
+    padding: 4px;
+  }
+
+  &.collapsed {
+    width: 40px;
+    .aside-content {
+      padding: 0 0.5rem;
+    }
+    .fa-user{
+      font-size: 23px;
+    }
+  }
+
+  .aside-content {
+    padding: 0 1rem;
+  }
+
+  .aside-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .aside-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-weight: bold;
+  }
+
+  // Individual Link
+  .aside-link {
+    padding: 0.2rem;
+    color: #ccccca;
+    min-width: 165px;
+    display: inline-block;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+      color: black;
+    }
+
+    &.active {
+      color: white;
+    }
+
+    i {
+      padding-right: 0.5rem;
+    }
+  }
+
+  // Toggle Icon
+  .aside-toggle {
+    display: flex;
+    justify-content: center;
+  }
+
+  .toggle-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: white;
+    opacity: 0;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+
+    &:hover {
+      opacity: 0;
+    }
+  }
+}
