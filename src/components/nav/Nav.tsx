@@ -20,7 +20,7 @@ function Nav() {
           </div>
           <div className="dropdown">
             <button className="dropdown-toggle" onClick={toggleDropdown}>
-             =
+            <i className="fa-solid fa-bars"></i>
             </button>
             {isOpen && (
               <ul className="dropdown-menuu">

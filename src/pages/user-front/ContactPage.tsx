@@ -53,7 +53,7 @@ function ContactPage() {
               Send messages
             </button>
           </form>
-          <ul>
+          <ul className="flex items-center justify-around flex-wrap">
             {contactUser.map((el) => {
               return (
                 <li key={el.id}>

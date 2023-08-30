@@ -37,13 +37,14 @@
     justify-content: space-between;
     align-items: center;
     color: white;
-    font-size: 2rem;
-    padding-bottom: 1rem;
+    font-size: 28px;
+    padding-bottom: 10px;
   }
 
   .aside-links {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 1rem;
     font-weight: bold;
   }
@@ -66,7 +67,7 @@
     }
 
     i {
-      padding-right: 0.5rem;
+      padding-right: 0.6rem;
     }
   }
 

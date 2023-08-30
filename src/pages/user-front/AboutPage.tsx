@@ -1,4 +1,4 @@
-import  { useEffect } from "react";
+import { useEffect } from "react";
 import { skillType } from "../../types";
 import { Link } from "react-router-dom";
 import { useSkills } from "../../states/skills";
@@ -53,10 +53,7 @@ const AboutPage = () => {
         <img className="about-image" src={IMGURL + photo} alt="" />
         <div className="about-details">
           <h3 className="about-name">{fields.join(" & ")}</h3>
-          <p className="about-description">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio
-            molestiae nobis, explicabo temporibus totam dolor!
-          </p>
+          <p className="about-description">{info}</p>
           <ul className="about-list">
             <li className="about-list-item">
               <span className="about-list-title">Birthday: </span>
@@ -87,7 +84,6 @@ const AboutPage = () => {
               Avialable
             </li>{" "}
           </ul>
-          <p className="about-info">{info}</p>
         </div>
       </div>
       <div className="about-skills-heading">

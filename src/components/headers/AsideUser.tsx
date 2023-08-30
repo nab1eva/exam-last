@@ -19,7 +19,7 @@ const AsideUser = ({
             className={`aside-link ${pathname === "/account" ? "active" : ""}`}
             to="/account"
           >
-            <i className="fa-regular fa-user"></i>
+            <i className="fa-solid fa-user"></i>
             Account
           </NavLink>
         </h2>
@@ -31,7 +31,7 @@ const AsideUser = ({
               }`}
               to="/user-experiences"
             >
-              <i className="bi bi-graph-up-arrow"></i> Experiences
+              <i className="fa-solid fa-city"></i> Experiences
             </NavLink>
           </li>
           <li>
@@ -41,7 +41,7 @@ const AsideUser = ({
               }`}
               to="/user-skills"
             >
-              <i className="bi bi-card-checklist"></i> Skills
+              <i className="fa-solid fa-wand-magic-sparkles"></i> Skills
             </NavLink>
           </li>
           <li>
@@ -61,7 +61,7 @@ const AsideUser = ({
               }`}
               to="/user-projects"
             >
-              <i className="bi bi-briefcase-fill"></i> Projects
+              <i className="fa-solid fa-book"></i> Projects
             </NavLink>
           </li>
         </ul>

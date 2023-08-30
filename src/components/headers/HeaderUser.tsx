@@ -82,10 +82,10 @@ const HeaderUser = ({
           {controlDropdown ? (
             <ul className="dropdown-menu">
               <li onClick={() => navigate("/home")} className="dropdown-item">
-                <i className="fa-regular fa-user"></i> View Portfolio
+                <i className="fa-solid fa-user"></i> View Portfolio
               </li>
               <li onClick={logOutUser} className="dropdown-item">
-                <i className="bi bi-box-arrow-right"></i> Log Out
+              <i className="fa-solid fa-right-from-bracket"></i>  Log Out
               </li>
             </ul>
           ) : null}
